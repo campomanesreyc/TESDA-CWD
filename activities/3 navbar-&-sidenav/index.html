@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/5f343dad2a.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Fontawesome CDNJS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <!-- Internal CSS -->
+    <style>
+      .sidenav li {
+        padding: 10px;
+      }
+      .dropdown-content {
+        margin-top: 10opx;
+      }
+    </style>
+
+    <title>Navbar and Sidenav</title>
+  </head>
+  <body>
+    <nav class="pink nav-extended">
+      <div class="container">
+        <div class="nav-wrapper">
+          <!-- Sidenav -->
+          <a href="#" class="sidenav-trigger" data-target="mobile-demo">
+            <i class="fa-solid fa-bars"></i>
+          </a>
+          <a href="https://fontawesome.com/" class="brand-logo center">
+            <i class="fa-brands fa-windows"></i>
+          </a>
+          <ul id="nav-mobile2" class="right hide-on-med-and-down">
+            <li><a href="#">Kits</a></li>
+            <li><a href="#">Icons</a></li>
+            <li><a href="#">Docs</a></li>
+            <li>
+              <a class="dropdown-trigger" href="#" data-target="dropdown1"
+                ><i class="fa-solid fa-caret-down"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-content">
+          <ul class="tabs tabs-transparent">
+            <li class="tab">
+              <a href="#test1">Test 1</a>
+            </li>
+            <li class="tab">
+              <a href="#test2">Test 2</a>
+            </li>
+            <li class="tab">
+              <a href="#test3">Test 3</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- SideNav Structure -->
+    <ul class="sidenav" id="mobile-demo">
+      <li class="active">Kits</li>
+      <li>Docs</li>
+      <li>Demo</li>
+    </ul>
+
+    <!-- Dropdown Structure -->
+    <ul id="dropdown1" class="dropdown-content center-align">
+      <li><a href="#!">one</a></li>
+      <li><a href="#!">two</a></li>
+      <li class="divider" tabindex="-1"></li>
+      <li><a href="#!">three</a></li>
+    </ul>
+
+    <div class="container">
+      <h1 class="center pink-text">Navbar</h1>
+    </div>
+    <div class="divider"></div>
+    <div class="container">
+      <p>
+        The navbar is fully contained by an HTML5 Nav tag. Inside a recommended
+        container div, there are 2 main parts of the navbar. A logo or brand
+        link, and the navigations links. You can align these links to the left
+        or right.
+      </p>
+
+      <h3 class="pink-text">Right Aligned Links</h3>
+      <p>
+        To right-align your navbar links, just add a right class to your
+        &lt;ul&gt; that contains them.
+      </p>
+      <nav class="pink">
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="https://fontawesome.com/" class="brand-logo">
+              <i class="fa-solid fa-font-awesome"></i>
+            </a>
+            <ul id="nav-mobile1" class="right hide-on-med-and-down">
+              <li><a href="#">Kits</a></li>
+              <li><a href="#">Icons</a></li>
+              <li><a href="#">Docs</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <h3 class="pink-text">Left Aligned Links</h3>
+      <p>
+        To left align your navbar links, just add a left class to your
+        &lt;ul&gt; that contains them.
+      </p>
+      <nav class="pink">
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="https://fontawesome.com/" class="brand-logo right">
+              <i class="fa-solid fa-font-awesome"></i>
+            </a>
+            <ul id="nav-mobile3" class="left hide-on-med-and-down">
+              <li><a href="#">Kits</a></li>
+              <li><a href="#">Icons</a></li>
+              <li><a href="#">Docs</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <h3 class="pink-text">Centering the Logo</h3>
+      <p>
+        The logo will center itself on medium and down screens, but if you want
+        the logo to always be centered, add the center class to your &lt;a
+        class="brand-logo"&gt; You will have to make sure yourself that links do
+        not overlap if you use this.
+      </p>
+      <nav class="pink">
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="https://fontawesome.com/" class="brand-logo center">
+              <i class="fa-solid fa-font-awesome"></i>
+            </a>
+            <ul id="nav-mobile4" class="left hide-on-med-and-down">
+              <li><a href="#">Kits</a></li>
+              <li><a href="#">Icons</a></li>
+              <li><a href="#">Docs</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <h3 class="pink-text">Active Items</h3>
+      <p>Add active class to your li tags to denote the current page.</p>
+      <nav class="pink">
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="https://fontawesome.com/" class="brand-logo center">
+              <i class="fa-solid fa-font-awesome"></i>
+            </a>
+            <ul id="nav-mobile5" class="left hide-on-med-and-down">
+              <li><a href="#">Kits</a></li>
+              <li class="active"><a href="#">Icons</a></li>
+              <li><a href="#">Docs</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <h3 class="pink-text">Extended Navbar with Tabs</h3>
+      <p>
+        To add extended components to the navbar, add the class nav-extended to
+        the outer nav tag. This will allow your navbar height to be variable.
+        Then you can just include a tabs component inside the nav-wrapper.
+      </p>
+
+      <nav class="pink nav-extended">
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="https://fontawesome.com/" class="brand-logo center">
+              <i class="fa-solid fa-font-awesome"></i>
+            </a>
+            <ul id="nav-mobile6" class="left hide-on-med-and-down">
+              <li><a href="#">Kits</a></li>
+              <li class="active"><a href="#">Icons</a></li>
+              <li><a href="#">Docs</a></li>
+            </ul>
+          </div>
+          <div class="nav-content">
+            <ul class="tabs tabs-transparent">
+              <li class="tab">
+                <a href="#test1">Test 1</a>
+              </li>
+              <li class="tab">
+                <a href="#test2">Test 2</a>
+              </li>
+              <li class="tab">
+                <a href="#test3">Test 3</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Tab Structure -->
+      <div class="row">
+        <div class="col s12" id="test1">
+          <div class="card">
+            <div class="card-image">
+              <img
+                src="./assets/image2.jpg"
+                alt="flowers"
+                class="responsive-img"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="col s12" id="test2">
+          <div class="card">
+            <div class="card-image">
+              <img
+                src="./assets/image3.jpg"
+                alt="flowers"
+                class="responsive-img"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="col s12" id="test3">
+          <div class="card">
+            <div class="card-image">
+              <img
+                src="./assets/image4.jpg"
+                alt="flowers"
+                class="responsive-img"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JQuery CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+      $(document).ready(() => {
+        // Tabs
+        $(".tabs").tabs();
+        // Sidenav
+        $(".sidenav").sidenav();
+        // Dropdown
+        $(".dropdown-trigger").dropdown();
+      });
+    </script>
+  </body>
+  <br />
+  <footer class="footer-copyright">
+    <div class="container-fluid pink white-text">
+      <strong> Developed by Rey Campomanes </strong>
+      <strong class="right"> Navbar and Sidenav </strong>
+    </div>
+  </footer>
+</html>
