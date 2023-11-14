@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Compiled and minified Materialize CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <!-- Material Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!-- Fontawesome CDN -->
+    <script
+      src="https://kit.fontawesome.com/5f343dad2a.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Rey Campomanes</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper">
+          <a href="#" id="logo">
+            <img
+              src="./svg/logo.svg"
+              alt="logo"
+              class="brand-logo"
+              width="60"
+            />
+          </a>
+          <a href="#" data-target="mobile-nav" class="sidenav-trigger"
+            ><i class="material-icons">menu</i></a
+          >
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <!-- SIDENAV -->
+    <ul class="sidenav" id="mobile-nav">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about-me">About Me</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="divider"></div>
+
+    <!-- HOME SECTION -->
+    <div class="container center section scrollspy" id="home">
+      <div class="row">
+        <div class="col s12">
+          <h1 class="sub-header">Hello,</h1>
+          <h1 class="header s12">I'm Rey Campomanes</h1>
+          <p class="accent-color" id="spaced-letter">
+            <b>ASPIRING FRONT-END DEVELOPER</b>
+          </p>
+          <a href="https://www.facebook.com/campomanesreyc">
+            <i class="fa-brands fa-square-facebook small"></i>
+          </a>
+          <a href="https://github.com/campomanesreyc">
+            <i class="fa-brands fa-square-github small"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/campomanesreyc/">
+            <i class="fa-brands fa-linkedin small"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- ABOUT ME SECTION -->
+    <div class="container section scrollspy" id="about-me">
+      <div class="row">
+        <div class="col s12">
+          <h3 class="header">
+            <span class="accent-color">01.</span>
+            About me
+          </h3>
+          <p>
+            Hello, I'm Rey Campomanes, an Information Technology student
+            passionate about Web Development and UX Design. I am studying at the
+            University of Cabuyao (Pamantasan ng Cabuyao). I am enthusiastic
+            about exploring the different frameworks and technologies in
+            building a web app and also the practices in UX Design.
+          </p>
+          <p>
+            When I'm not immersed in my studies, you might catch me exploring
+            the captivating worlds of KDramas and Anime or delving into the
+            fascinating stories of manhwa.
+          </p>
+          <p>
+            My journey in Information Technology has been a fascinating
+            exploration of projects involving front-end development, UX design,
+            and optimizing websites for a seamless user experience. I enjoy
+            tackling challenges and constantly seek opportunities to expand my
+            knowledge and skills.
+          </p>
+          <p>
+            I believe that a well-rounded individual is better equipped to
+            tackle the complexities of the professional world. My goal is to
+            become a developer that delivers effective IT solutions.
+          </p>
+          <p>
+            Feel free to explore my portfolio to learn more about my academic
+            journey and the projects I've undertaken. If you have any questions
+            or want to connect, please reach out here!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- SKILLS SECTION -->
+    <div class="container section scrollspy" id="skills">
+      <div class="row">
+        <div class="col s12">
+          <h3 class="header">
+            <span class="accent-color">02.</span>
+            Skills
+          </h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12">
+          <div class="card">
+            <div class="card-content">
+              <br />
+              <div class="row">
+                <div class="col s12 m6">
+                  <i class="fa-brands fa-html5 small"></i>
+                  <span class="skills-label">HTML &</span>
+                  <i class="fa-brands fa-css3-alt small"></i>
+                  <span class="skills-label">CSS</span>
+                  <div class="progress">
+                    <div class="determinate" id="html-css"></div>
+                  </div>
+
+                  <i class="fa-brands fa-js small"></i>
+                  <span class="skills-label">JavaScript</span>
+                  <div class="progress">
+                    <div class="determinate" id="javascript"></div>
+                  </div>
+
+                  <img
+                    src="./svg/jquery.svg"
+                    alt=""
+                    class="responsive-img"
+                    width="44"
+                  />
+                  <span class="skills-label">jQuery</span>
+                  <div class="progress">
+                    <div class="determinate" id="jquery"></div>
+                  </div>
+
+                  <i class="fa-solid fa-database small"></i>
+                  <span class="skills-label">MySQL</span>
+                  <div class="progress">
+                    <div class="determinate" id="mysql"></div>
+                  </div>
+                </div>
+
+                <div class="col s12 m6">
+                  <i class="fa-brands fa-php small"></i>
+                  <span class="skills-label">PHP</span>
+                  <div class="progress">
+                    <div class="determinate" id="php"></div>
+                  </div>
+
+                  <i class="fa-brands fa-bootstrap small"></i>
+                  <span class="skills-label">Bootstrap</span>
+                  <div class="progress">
+                    <div class="determinate" id="bootstrap"></div>
+                  </div>
+
+                  <img
+                    src="./svg/tailwindcss.svg"
+                    alt=""
+                    class="responsive-img"
+                    width="47"
+                  />
+                  <span class="skills-label">Tailwind CSS</span>
+                  <div class="progress">
+                    <div class="determinate" id="tailwindcss"></div>
+                  </div>
+
+                  <img
+                    src="./svg/materializecss.svg"
+                    alt=""
+                    class="responsive-img"
+                    width="47"
+                  />
+                  <span class="skills-label">Materialize CSS</span>
+                  <div class="progress">
+                    <div class="determinate" id="materializecss"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- PROJECTS SECTION -->
+    <div class="container section scrollspy" id="projects">
+      <div class="row">
+        <div class="col s12">
+          <h3 class="header">
+            <span class="accent-color">03.</span>
+            Projects
+          </h3>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s12">
+          <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img
+                class="activator"
+                src="./images/project-ninjas.png"
+                alt="project ninjas"
+              />
+            </div>
+            <div class="card-content">
+              <span class="card-title activator header">
+                Project Ninjas
+                <i class="material-icons right">more_vert</i>
+              </span>
+              <p>
+                <a href="http://projectninjas.mywebcommunity.org/"
+                  >View here &gt;</a
+                >
+              </p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title header">
+                Project Ninjas
+                <i class="material-icons right">close</i>
+              </span>
+              <div class="divider"></div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Convallis a cras semper auctor neque vitae. Eget lorem dolor sed
+                viverra ipsum. Duis at tellus at urna. Neque ornare aenean
+                euismod elementum nisi. Lorem sed risus ultricies tristique
+                nulla aliquet enim. Faucibus vitae aliquet nec ullamcorper sit
+                amet risus nullam. Ac turpis egestas maecenas pharetra.
+                Scelerisque in dictum non consectetur a erat nam. In mollis nunc
+                sed id.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s12">
+          <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img
+                class="activator"
+                src="./images/suzanne-collins.png"
+                alt="suzanne-collins"
+              />
+            </div>
+            <div class="card-content">
+              <span class="card-title activator header">
+                Suzanne Collins Website Redesign
+                <i class="material-icons right">more_vert</i>
+              </span>
+              <p>
+                <a href="http://suzannecollins.mywebcommunity.org/"
+                  >View here &gt;</a
+                >
+              </p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title header">
+                Suzanne Collins Website Redesign
+                <i class="material-icons right">close</i>
+              </span>
+              <div class="divider"></div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Convallis a cras semper auctor neque vitae. Eget lorem dolor sed
+                viverra ipsum. Duis at tellus at urna. Neque ornare aenean
+                euismod elementum nisi. Lorem sed risus ultricies tristique
+                nulla aliquet enim. Faucibus vitae aliquet nec ullamcorper sit
+                amet risus nullam. Ac turpis egestas maecenas pharetra.
+                Scelerisque in dictum non consectetur a erat nam. In mollis nunc
+                sed id.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s12">
+          <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img
+                class="activator"
+                src="./images/covid19-dwa.png"
+                alt="suzanne-collins"
+              />
+            </div>
+            <div class="card-content">
+              <span class="card-title activator header">
+                COVID19 Declaration Web App
+                <i class="material-icons right">more_vert</i>
+              </span>
+              <p>
+                <a href="http://covid19dwa.atwebpages.com/">View here &gt;</a>
+              </p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title header">
+                COVID19 Declaration Web App
+                <i class="material-icons right">close</i>
+              </span>
+              <div class="divider"></div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Convallis a cras semper auctor neque vitae. Eget lorem dolor sed
+                viverra ipsum. Duis at tellus at urna. Neque ornare aenean
+                euismod elementum nisi. Lorem sed risus ultricies tristique
+                nulla aliquet enim. Faucibus vitae aliquet nec ullamcorper sit
+                amet risus nullam. Ac turpis egestas maecenas pharetra.
+                Scelerisque in dictum non consectetur a erat nam. In mollis nunc
+                sed id.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- CONTACT SECTION -->
+    <div class="container section scrollspy" id="contact">
+      <div class="row">
+        <div class="col s12">
+          <h3 class="header">
+            <span class="accent-color">04.</span>
+            Contact
+          </h3>
+        </div>
+      </div>
+
+      <div class="row sub-header">
+        <div class="col s12">
+          <p class="">
+            I'd love to hear from you! Whether you have a project in mind, want
+            to collaborate, or just want to say hello, feel free to reach out.
+            I'm always open to new opportunities and conversations.
+          </p>
+
+          <br />
+
+          <div class="row">
+            <div class="col s12">
+              <p>
+                <i class="fa-brands fa-square-github small"></i>
+                <a href="https://github.com/campomanesreyc"> campomanesreyc </a>
+              </p>
+            </div>
+            <div class="col s12">
+              <p>
+                <i class="fa-brands fa-linkedin small"></i>
+                <a href="https://www.linkedin.com/in/campomanesreyc/">
+                  campomanesreyc
+                </a>
+              </p>
+            </div>
+            <div class="col s12">
+              <p>
+                <i class="fa-solid fa-square-envelope small"></i>
+                <a href="https://mail.google.com/mail">
+                  &nbsp; campomanesreyc@gmail.com
+                </a>
+              </p>
+            </div>
+          </div>
+
+          <br />
+
+          <p class="">Let's connect and bring your ideas to life!</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Compiled and minified Materialize JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Custom CSS -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>

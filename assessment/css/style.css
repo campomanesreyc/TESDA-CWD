@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Assistant&family=Cambay&display=swap");
+
+body {
+  background-color: #0a0f0d;
+  font-family: "Cambay", sans-serif;
+  color: #00ced1;
+}
+
+.accent-color {
+  color: #6a5acd;
+}
+
+.header {
+  font-family: "Archivo Black", sans-serif;
+}
+
+.sub-header {
+  font-family: "Assistant", sans-serif;
+}
+
+#logo {
+  padding: 10px;
+}
+
+.nav-wrapper,
+#mobile-nav,
+.nav-wrapper a,
+#mobile-nav a {
+  background-color: #0a0f0d;
+  color: #00ced1;
+}
+
+.nav-wrapper a:hover {
+  color: #6a5acd;
+}
+
+.divider {
+  background-color: #6a5acd;
+}
+
+#home {
+  margin-top: 14%;
+  padding-bottom: 10%;
+}
+
+#home h1,
+#home h3 {
+  margin: 0px;
+  overflow-wrap: break-word;
+}
+
+#spaced-letter {
+  letter-spacing: 5px;
+  overflow-wrap: break-word;
+}
+
+.fa-brands {
+  color: #00ced1;
+  margin: 5px;
+}
+
+#skills .card {
+  background-color: #0a0f0d;
+  overflow-wrap: break-word;
+}
+
+#skills .card-title {
+  color: #00ced1;
+}
+
+.skills-label {
+  font-size: 2rem;
+}
+
+#skills #html-css {
+  width: 90%;
+  background-color: #6a5acd;
+}
+
+#skills #javascript {
+  width: 80%;
+  background-color: #6a5acd;
+}
+
+#skills #jquery {
+  width: 50%;
+  background-color: #6a5acd;
+}
+
+#skills #mysql {
+  width: 70%;
+  background-color: #6a5acd;
+}
+
+#skills #php {
+  width: 80%;
+  background-color: #6a5acd;
+}
+
+#skills #bootstrap {
+  width: 100%;
+  background-color: #6a5acd;
+}
+
+#skills #tailwindcss {
+  width: 80%;
+  background-color: #6a5acd;
+}
+
+#skills #materializecss {
+  width: 80%;
+  background-color: #6a5acd;
+}
+
+#projects .card,
+#projects .card-reveal {
+  background-color: #0a0f0d;
+  border: 1px solid #6a5acd;
+  padding: 10px;
+}
+
+#projects a {
+  color: #6a5acd;
+}
+
+.contact-label {
+  font-size: 1.5rem;
+}
+
+#contact .sub-header {
+  font-size: 1.5rem;
+}
+
+#contact a {
+  color: #6a5acd;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
