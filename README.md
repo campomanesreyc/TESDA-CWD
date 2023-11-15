@@ -27,11 +27,11 @@ All activities and assessments within this repository leverage the power and fle
 - Creative Web Design - Institutional Assessment
   - [Web Porfolio](https://teswa-cwd-batch38-campomanesreyc.netlify.app/)
 
-## About Materialize
+## About MaterializeCSS
 
 This project utilizes the Materialize framework for a responsive and visually appealing design. If you're not familiar with Materialize, you can find more information and documentation on the [official website](https://materializecss.com/).
 
-To get started, make sure to include the Materialize CDNJS in your HTML file:
+To get started, make sure to include the MaterializeCSS CDNJS in your HTML file:
 
 ```html
 <!-- Compiled and minified CSS -->
