@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Compiled and minified Materialize CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <!-- Material Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!-- Fontawesome CDN -->
+    <script
+      src="https://kit.fontawesome.com/5f343dad2a.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./style.css" />
+    <title>Dashboard - Admin</title>
+  </head>
+  <body>
+    <!-- HEADER: NAVBAR AND SIDENAV -->
+    <header>
+      <nav>
+        <div class="nav-wrapper white">
+          <div class="navbar">
+            <ul class="right dropdown-trigger" data-target="settings-dropdown">
+              <li>
+                <a>
+                  <i class="fa-solid fa-gear sm"></i>
+                </a>
+              </li>
+            </ul>
+            <a href="#!" target="_blank" class="brand-logo"><h5>Home</h5></a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+              <i class="material-icons">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="#" target="_blank">Buy Now!</a></li>
+              <li class="dropdown-trigger" data-target="notification-dropdown">
+                <a href="#"><i class="fa-solid fa-bell sm"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Settings Dropdown Structure -->
+      <ul id="settings-dropdown" class="dropdown-content">
+        <li>
+          <div class="switch">
+            <p>
+              <label>
+                <span class="black-text">Night Mode</span>
+                <input type="checkbox" />
+                <span class="lever"></span>
+              </label>
+            </p>
+          </div>
+        </li>
+        <li>
+          <p>
+            <label>
+              <input type="checkbox" class="filled-in" />
+              <span class="black-text">Beta Testing</span>
+            </label>
+          </p>
+        </li>
+      </ul>
+
+      <!-- Notification Dropdown Structure -->
+      <ul id="notification-dropdown" class="dropdown-content">
+        <li>
+          <h5>Notifications</h5>
+        </li>
+        <li>
+          <div class="card blue">
+            <div class="card-content white-text">
+              <span class="card-title">Joe Smith made a purchase!</span>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem,
+                ab reprehenderit enim eos necessitatibus eaque iure dolores
+                architecto laudantium earum nisi quae tempora cum, vitae modi
+                nam, atque neque sed.
+              </p>
+            </div>
+            <div class="card-action">
+              <a href="#" class="white-text right">Dismiss</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <!-- Sidenav Structure -->
+      <div class="sidenav blue sidenav-fixed" id="mobile-demo">
+        <ul class="collapsible">
+          <li>
+            <a href="./index.html">
+              <h5>
+                <i class="fa-solid fa-user"></i>
+                &nbsp;&nbsp; Admin
+              </h5>
+            </a>
+          </li>
+          <!-- Dashboard -->
+          <li class="active">
+            <div class="collapsible-header">
+              <h6>PAGES</h6>
+            </div>
+            <div class="collapsible-body blue">
+              <ul>
+                <li class="active">
+                  <a href="#" target="_blank">
+                    <i class="fa-solid fa-table-columns"></i>Dashboard
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <i class="fa-solid fa-chart-line"></i>Fixed Chart
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <i class="fa-solid fa-grip"></i>Grid
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <i class="fa-solid fa-comment"></i>Chat
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <!-- Charts -->
+          <li>
+            <div class="collapsible-header">
+              <h6>CHARTS</h6>
+            </div>
+            <div class="collapsible-body blue">
+              <ul>
+                <li>
+                  <a href="#" target="_blank">
+                    <i class="fa-solid fa-arrow-trend-up"></i>Line Charts
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <i class="fa-solid fa-chart-simple"></i>Bar Charts
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <i class="fa-solid fa-chart-area"></i>Area Charts
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <i class="fa-solid fa-chart-pie"></i>Doughnut Charts
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <i class="fa-solid fa-peso-sign"></i>Financial Charts
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <i class="fa-solid fa-hand-pointer"></i>Interactive Charts
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <!-- Tables -->
+          <li>
+            <div class="collapsible-header">
+              <h6>TABLES</h6>
+            </div>
+            <div class="collapsible-body blue">
+              <ul>
+                <li>
+                  <a href="#" target="_blank">
+                    <i class="fa-solid fa-arrow-trend-up"></i>Full Screen with
+                    Chart
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <i class="fa-solid fa-gear"></i>Table with Custom Elements
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <!-- Calendar -->
+          <li>
+            <div class="collapsible-header">
+              <h6>CALENDAR</h6>
+            </div>
+            <div class="collapsible-body blue">
+              <ul>
+                <li>
+                  <a href="#" target="_blank">
+                    <i class="fa-solid fa-calendar-days"></i>Calendar
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <!-- Headers -->
+          <li>
+            <div class="collapsible-header">
+              <h6>HEADERS</h6>
+            </div>
+            <div class="collapsible-body blue">
+              <ul>
+                <li>
+                  <a href="#" target="_blank">
+                    <i class="fa-solid fa-window-restore"></i>Tabbed
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <i class="fa-solid fa-table"></i>Metrics
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <i class="fa-solid fa-magnifying-glass"></i>Search
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <!-- Accounts -->
+          <li>
+            <div class="collapsible-header">
+              <h6>ACCOUNTS</h6>
+            </div>
+            <div class="collapsible-body blue">
+              <ul>
+                <li>
+                  <a href="#" target="_blank">
+                    <i class="fa-solid fa-right-to-bracket"></i>Login
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <i class="fa-solid fa-gear"></i>Settings
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- CONTENT -->
+    <main>
+      <div class="main-div">
+        <div class="row dashboard">
+          <div class="col s12">
+            <h3>Dashboard</h3>
+          </div>
+
+          <!-- Summary -->
+          <div class="row">
+            <div class="col s12 m6 l3">
+              <div class="card">
+                <div class="card-content">
+                  <span class="card-title"><h6>Revenue</h6></span>
+                  <span class="card-value">$12,476.00</span>
+                  <br />
+                  <span class="card-metric-change green-text">
+                    <i class="fa-solid fa-angle-up"></i>
+                    &nbsp;12%
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m6 l3">
+              <div class="card">
+                <div class="card-content">
+                  <span class="card-title"><h6>Clicks</h6></span>
+                  <span class="card-value">11,893</span>
+                  <br />
+                  <span class="card-metric-change green-text">
+                    <i class="fa-solid fa-angle-up"></i>
+                    &nbsp;8%
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m6 l3">
+              <div class="card">
+                <div class="card-content">
+                  <span class="card-title"><h6>Users</h6></span>
+                  <span class="card-value">230,648</span>
+                  <br />
+                  <span class="card-metric-change red-text">
+                    <i class="fa-solid fa-angle-down"></i>
+                    &nbsp;2%
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m6 l3">
+              <div class="card">
+                <div class="card-content">
+                  <span class="card-title"><h6>Conversion Rate</h6></span>
+                  <span class="card-value">0.24%</span>
+                  <br />
+                  <span class="card-metric-change red-text">
+                    <i class="fa-solid fa-angle-down"></i>
+                    &nbsp;9%
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Chart -->
+          <div class="row">
+            <div class="col s12">
+              <div class="card">
+                <div class="card-content">
+                  <div class="row center">
+                    <div class="col s12 m4 l4">
+                      <span class="card-title"><h6>Revenue</h6></span>
+                      <span class="card-value">$12,476.00</span>
+                      <br />
+                      <span class="card-metric-change green-text">
+                        <i class="fa-solid fa-angle-up"></i>
+                        &nbsp;12%
+                      </span>
+                    </div>
+                    <div class="col s12 m4 l4">
+                      <span class="card-title"><h6>Users</h6></span>
+                      <span class="card-value">2024</span>
+                      <br />
+                      <span class="card-metric-change green-text">
+                        <i class="fa-solid fa-angle-up"></i>
+                        &nbsp;9%
+                      </span>
+                    </div>
+                    <div class="col s12 m4 l4">
+                      <span class="card-title"><h6>CTR</h6></span>
+                      <span class="card-value">0.20%</span>
+                      <br />
+                      <span class="card-metric-change green-text">
+                        <i class="fa-solid fa-angle-up"></i>
+                        &nbsp;4%
+                      </span>
+                    </div>
+                  </div>
+                  <div class="row" id="lineChartContainer"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col s12 m6">
+              <!-- Updates -->
+              <div class="row">
+                <div class="col s12">
+                  <div class="card">
+                    <div class="card-content">
+                      <span class="card-title"><h5>Updates</h5></span>
+                      <br />
+                      <div class="row">
+                        <div class="col s12">
+                          <span class="badge red left white-text">refund</span>
+                          &nbsp;&nbsp;&nbsp;45$ refunded to Alan Chang
+                        </div>
+                        <div class="col offset-s8 grey-text">1 minute ago</div>
+                      </div>
+                      <div class="row">
+                        <div class="col s12">
+                          <span class="badge green left white-text">
+                            purchase
+                          </span>
+                          &nbsp;&nbsp;&nbsp;45$ from Alan Chang
+                        </div>
+                        <div class="col offset-s8 grey-text">
+                          10 minutes ago
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col s12">
+                          <span class="badge red left white-text">refund</span>
+                          &nbsp;&nbsp;&nbsp;45$ refunded to Alan Chang
+                        </div>
+                        <div class="col offset-s8 grey-text">
+                          45 minutes ago
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Stacked Bar Chart -->
+              <div class="row">
+                <div class="col s12">
+                  <div class="card">
+                    <div class="card-content">
+                      <span class="card-title"><h5>Stacked Bar Chart</h5></span>
+                      <div id="stackedBarChartContainer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col s12 m6">
+              <!-- Card Tabs -->
+              <div class="card blue white-text">
+                <div class="card-content">
+                  <p>
+                    I am a very simple card. I am good at containing small bits
+                    of information. I am convenient because I require little
+                    markup to use effectively.
+                  </p>
+                </div>
+                <div class="card-tabs">
+                  <ul class="tabs tabs-fixed-width blue">
+                    <li class="tab">
+                      <a class="white-text" href="#chart1">Day</a>
+                    </li>
+                    <li class="tab">
+                      <a class="active white-text" href="#chart2">Month</a>
+                    </li>
+                    <li class="tab">
+                      <a <a class="white-text" href="#chart3">Year</a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- Tab Structure -->
+                <div class="card-content blue">
+                  <div id="chart1">
+                    <div id="dayLineChartContainer"></div>
+                  </div>
+                  <div id="chart2">
+                    <div id="monthLineChartContainer"></div>
+                  </div>
+                  <div id="chart3">
+                    <div id="yearLineChartContainer"></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Pie Chart -->
+              <div class="card">
+                <div class="card-content">
+                  <span class="card-title"> <h5>Devices</h5></span>
+                  <div id="pieChartContainer"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-copyright">
+        <b>Created by: Rey Campomanes</b>
+        <b class="right">TESDA-CWD BATCH 38</b>
+      </div>
+    </footer>
+
+    <!-- jQuery CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Compiled and minified Materialize JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Canvas JS -->
+    <script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
+    <!-- Custom JS -->
+    <script src="./js/script.js"></script>
+    <script src="./js/chart.js"></script>
+  </body>
+</html>
