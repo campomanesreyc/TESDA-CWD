@@ -1,8 +1,10 @@
-# TESDA - Creative Web Design Repository
+# TESDA - Creative Web Design
 
 ## Overview
 
-This repository is dedicated to activities and assessments I made related to the Creative Web Design course offered by TESDA through Telecall Laguna
+This repository is dedicated to activities and assessments I made related to the Creative Web Design course offered by TESDA and facilitated by Telecall Laguna.
+
+All activities and assessments within this repository leverage the power and flexibility of the MaterializeCSS Framework. This modern framework provides a sleek and responsive design, enhancing the overall user experience and ensuring compatibility across various devices
 
 ## Table of Contents
 
@@ -17,10 +19,13 @@ This repository is dedicated to activities and assessments I made related to the
 - Navbar and Sidenav
 - Buttons
 - Grid System
+- Building Project
+  - [Dashboard - Admin](https://cwd-building-project-campomanesreyc.netlify.app/)
 
 ## Assessments
 
 - Creative Web Design - Institutional Assessment
+  - [Web Porfolio](https://teswa-cwd-batch38-campomanesreyc.netlify.app/)
 
 ## About Materialize
 
